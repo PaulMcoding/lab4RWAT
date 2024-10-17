@@ -4,30 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Fetching</title>
-    <style>
-        table, th, td {
-            border: 1px solid black;
-            border-collapse: collapse;
-            padding: 8px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
 </head>
 <body>
-    <h1>Data Fetching</h1>
-    <button onclick="fetchDataSync()">Fetch with Sync XMLHttpRequest</button>
-    <button onclick="fetchDataAsync()">Fetch with Async XMLHttpRequest</button>
-    <button onclick="fetchDataWithFetch()">Fetch with Fetch API</button>
+    <div class="SIDS">
+        <h1>Data Fetching</h1>
+        <button onclick="synchronous()">Synchronised data retrieval</button>
+        <button onclick="async()">Asynchronous data retrieval</button>
+        <button onclick="fetchAndPromise()">Fetch and Promise data retrieval</button>
 
-    <table id="data-table">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Surname</th>
-                <th>ID</th>
-            </tr>
-        </thead>
-        <tbody></tbody>
-    </table>
+        <table id="data-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Surname</th>
+                    <th>ID</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
 
     <script src="script.js"></script>
 </body>
